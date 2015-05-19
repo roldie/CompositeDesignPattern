@@ -10,5 +10,22 @@
 #define __CompositeDesignPattern__Leaf__
 
 #include <stdio.h>
+#include "Component.h"
+
+class Leaf:public Component{
+    
+private:
+    
+public:
+    
+    Leaf(string uName):Component(uName){
+        
+        name=uName;
+        
+    };
+    
+    ~Leaf(){};
+    
+};
 
 #endif /* defined(__CompositeDesignPattern__Leaf__) */

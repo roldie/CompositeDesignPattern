@@ -9,6 +9,7 @@
 #include <iostream>
 #include "Component.h"
 #include "Composite.h"
+#include "Leaf.h"
 
 using namespace std;
 
@@ -18,13 +19,19 @@ int main(int argc, const char * argv[]) {
     Component *stopButton=new Composite("stop");
     Component *pauseButton=new Composite("pause");
     Component *atariButton=new Composite("atari");
+
+    Component *mouseButton=new Leaf("mouse");
     
     playButton->add(stopButton);
+    
     stopButton->add(pauseButton);
     stopButton->add(atariButton);
-    
-    
     stopButton->getChildName();
+    
+    
+    playButton->add(mouseButton);
+    
+    playButton->getChildName();
     
     return 0;
 }
