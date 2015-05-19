@@ -15,23 +15,30 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 
-    Component *playButton=new Composite("play");
-    Component *stopButton=new Composite("stop");
-    Component *pauseButton=new Composite("pause");
-    Component *atariButton=new Composite("atari");
+    //1. create components
+    Component *grandPa=new Composite("grandpa");
+    Component *father=new Composite("dad");
+    
+    Component *uncle=new Composite("uncleBob");
 
-    Component *mouseButton=new Leaf("mouse");
+    //2. create leaves
+    Component *child=new Leaf("junior");
+    Component *brother=new Leaf("jack");
     
-    playButton->add(stopButton);
+    //3. add children to the root node
+    grandPa->add(father);
     
-    stopButton->add(pauseButton);
-    stopButton->add(atariButton);
-    stopButton->getChildName();
+    grandPa->add(uncle);
     
+    //4. add children to nodes
+    father->add(child);
+    father->add(brother);
     
-    playButton->add(mouseButton);
+    //5. print all children of root node
+    grandPa->getChildName();
     
-    playButton->getChildName();
+    //6. print all children of node
+    //father->getChildName();
     
     return 0;
 }

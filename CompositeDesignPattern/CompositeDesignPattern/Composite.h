@@ -20,6 +20,8 @@ class Composite:public Component{
 private:
     
 public:
+    
+    //1. Constructor
     Composite(string uName):Component(uName){
     
         name=uName;
@@ -28,7 +30,10 @@ public:
     
     ~Composite(){};
     
+    //2. add component as child
     void add(Component *uComponent);
+    
+    //3. remove child component
     void remove(Component *uComponent);
     
 };

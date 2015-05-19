@@ -23,22 +23,22 @@ private:
 
 public:
 
+    //1. name of component
     string name;
     
+    //2. vector to store all components
     vector<Component*> components;
     
+    //3. constructor
     Component(string uName);
     
     ~Component();
     
-    Component(const Component& value);
-    
-    
-    Component& operator=(const Component& value);
-    
+    //4. these methods will be implemented by the subclasses
     virtual void add(Component *uComponent){};
     virtual void remove(Component *uComponent){};
     
+    //5. function to print all children name
     void getChildName();
 
 
