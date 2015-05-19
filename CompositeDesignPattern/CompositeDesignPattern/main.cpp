@@ -7,9 +7,24 @@
 //
 
 #include <iostream>
+#include "Component.h"
+#include "Composite.h"
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+
+    Component *playButton=new Composite("play");
+    Component *stopButton=new Composite("stop");
+    Component *pauseButton=new Composite("pause");
+    Component *atariButton=new Composite("atari");
+    
+    playButton->add(stopButton);
+    stopButton->add(pauseButton);
+    stopButton->add(atariButton);
+    
+    
+    stopButton->getChildName();
+    
     return 0;
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0327B1BB1B0BECF50087BACC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0327B1BA1B0BECF50087BACC /* main.cpp */; };
+		0327B1C61B0BF1530087BACC /* Leaf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0327B1C41B0BF1530087BACC /* Leaf.cpp */; };
+		0327B1C91B0BF1620087BACC /* Composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0327B1C71B0BF1620087BACC /* Composite.cpp */; };
+		0327B1CC1B0BF2060087BACC /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0327B1CA1B0BF2060087BACC /* Component.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		0327B1B71B0BECF50087BACC /* CompositeDesignPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CompositeDesignPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		0327B1BA1B0BECF50087BACC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0327B1C21B0BF1320087BACC /* ComponentInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComponentInterface.h; sourceTree = "<group>"; };
+		0327B1C41B0BF1530087BACC /* Leaf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Leaf.cpp; sourceTree = "<group>"; };
+		0327B1C51B0BF1530087BACC /* Leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		0327B1C71B0BF1620087BACC /* Composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Composite.cpp; sourceTree = "<group>"; };
+		0327B1C81B0BF1620087BACC /* Composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Composite.h; sourceTree = "<group>"; };
+		0327B1CA1B0BF2060087BACC /* Component.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Component.cpp; sourceTree = "<group>"; };
+		0327B1CB1B0BF2060087BACC /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				0327B1BA1B0BECF50087BACC /* main.cpp */,
+				0327B1C21B0BF1320087BACC /* ComponentInterface.h */,
+				0327B1CB1B0BF2060087BACC /* Component.h */,
+				0327B1CA1B0BF2060087BACC /* Component.cpp */,
+				0327B1C51B0BF1530087BACC /* Leaf.h */,
+				0327B1C41B0BF1530087BACC /* Leaf.cpp */,
+				0327B1C81B0BF1620087BACC /* Composite.h */,
+				0327B1C71B0BF1620087BACC /* Composite.cpp */,
 			);
 			path = CompositeDesignPattern;
 			sourceTree = "<group>";
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0327B1C61B0BF1530087BACC /* Leaf.cpp in Sources */,
+				0327B1C91B0BF1620087BACC /* Composite.cpp in Sources */,
 				0327B1BB1B0BECF50087BACC /* main.cpp in Sources */,
+				0327B1CC1B0BF2060087BACC /* Component.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
