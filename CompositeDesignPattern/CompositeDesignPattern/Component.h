@@ -1,13 +1,13 @@
 //
 //  Component.h
-//  CompositeDesignPattern
+//  WindowViewDesignPattern
 //
 //  Created by Harold Serrano on 5/19/15.
 //  Copyright (c) 2015 cgdemy.com. All rights reserved.
 //
 
-#ifndef __CompositeDesignPattern__Component__
-#define __CompositeDesignPattern__Component__
+#ifndef __WindowViewDesignPattern__Component__
+#define __WindowViewDesignPattern__Component__
 
 #include <stdio.h>
 #include <iostream>
@@ -23,11 +23,11 @@ private:
 
 public:
 
-    //1. name of component
+    //1. name of Component
     string name;
     
-    //2. vector to store all components
-    vector<Component*> components;
+    //2. vector to store all Components
+    vector<Component*> Components;
     
     //3. constructor
     Component(string uName);
@@ -44,4 +44,4 @@ public:
 
 };
 
-#endif /* defined(__CompositeDesignPattern__Component__) */
+#endif /* defined(__WindowViewDesignPattern__Component__) */

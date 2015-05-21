@@ -1,6 +1,6 @@
 //
 //  Component.cpp
-//  CompositeDesignPattern
+//  WindowViewDesignPattern
 //
 //  Created by Harold Serrano on 5/19/15.
 //  Copyright (c) 2015 cgdemy.com. All rights reserved.
@@ -22,10 +22,10 @@ Component::~Component(){
 void Component::getChildName(){
     
     
-    for (int i=0; i<components.size(); i++) {
+    for (int i=0; i<Components.size(); i++) {
         
-        cout<<components.at(i)->name<<endl;
-        components.at(i)->getChildName();
+        cout<<Components.at(i)->name<<endl;
+        Components.at(i)->getChildName();
     }
     
     

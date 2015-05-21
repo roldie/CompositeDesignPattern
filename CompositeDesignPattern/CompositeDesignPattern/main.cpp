@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  CompositeDesignPattern
+//  WindowViewDesignPattern
 //
 //  Created by Harold Serrano on 5/19/15.
 //  Copyright (c) 2015 cgdemy.com. All rights reserved.
@@ -8,37 +8,37 @@
 
 #include <iostream>
 #include "Component.h"
-#include "Composite.h"
-#include "Leaf.h"
+#include "WindowView.h"
+#include "ButtonView.h"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
 
-    //1. create components
-    Component *grandPa=new Composite("grandpa");
-    Component *father=new Composite("dad");
+    //1. create Components
+    Component *mainScreen=new WindowView("MainScreen");
+    Component *subScreen1=new WindowView("SubScreen_1");
     
-    Component *uncle=new Composite("uncleBob");
+    Component *subScreen2=new WindowView("SubScreen_2");
 
     //2. create leaves
-    Component *child=new Leaf("junior");
-    Component *brother=new Leaf("jack");
+    Component *playButton=new ButtonView("Play");
+    Component *stopButton=new ButtonView("Stop");
     
     //3. add children to the root node
-    grandPa->add(father);
+    mainScreen->add(subScreen1);
     
-    grandPa->add(uncle);
+    mainScreen->add(subScreen2);
     
     //4. add children to nodes
-    father->add(child);
-    father->add(brother);
+    subScreen1->add(playButton);
+    subScreen1->add(stopButton);
     
     //5. print all children of root node
-    grandPa->getChildName();
+    mainScreen->getChildName();
     
     //6. print all children of node
-    //father->getChildName();
+    //subScreen1->getChildName();
     
     return 0;
 }

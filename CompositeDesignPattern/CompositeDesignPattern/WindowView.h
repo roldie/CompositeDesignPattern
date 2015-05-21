@@ -1,13 +1,13 @@
 //
-//  Composite.h
-//  CompositeDesignPattern
+//  WindowView.h
+//  WindowViewDesignPattern
 //
 //  Created by Harold Serrano on 5/19/15.
 //  Copyright (c) 2015 cgdemy.com. All rights reserved.
 //
 
-#ifndef __CompositeDesignPattern__Composite__
-#define __CompositeDesignPattern__Composite__
+#ifndef __WindowViewDesignPattern__WindowView__
+#define __WindowViewDesignPattern__WindowView__
 
 #include <stdio.h>
 #include <vector>
@@ -15,26 +15,26 @@
 
 using namespace std;
 
-class Composite:public Component{
+class WindowView:public Component{
     
 private:
     
 public:
     
     //1. Constructor
-    Composite(string uName):Component(uName){
+    WindowView(string uName):Component(uName){
     
         name=uName;
         
     };
     
-    ~Composite(){};
+    ~WindowView(){};
     
-    //2. add component as child
+    //2. add Component as child
     void add(Component *uComponent);
     
-    //3. remove child component
+    //3. remove child Component
     void remove(Component *uComponent);
     
 };
-#endif /* defined(__CompositeDesignPattern__Composite__) */
+#endif /* defined(__WindowViewDesignPattern__WindowView__) */

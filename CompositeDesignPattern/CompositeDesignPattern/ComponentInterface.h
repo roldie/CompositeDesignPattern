@@ -1,13 +1,13 @@
 //
 //  ComponentInterface.h
-//  CompositeDesignPattern
+//  WindowViewDesignPattern
 //
 //  Created by Harold Serrano on 5/19/15.
 //  Copyright (c) 2015 cgdemy.com. All rights reserved.
 //
 
-#ifndef __CompositeDesignPattern__ComponentInterface__
-#define __CompositeDesignPattern__ComponentInterface__
+#ifndef __WindowViewDesignPattern__ComponentInterface__
+#define __WindowViewDesignPattern__ComponentInterface__
 
 #include <stdio.h>
 #include <string>
@@ -30,4 +30,4 @@ public:
     
 };
 
-#endif /* defined(__CompositeDesignPattern__ComponentInterface__) */
+#endif /* defined(__WindowViewDesignPattern__ComponentInterface__) */
