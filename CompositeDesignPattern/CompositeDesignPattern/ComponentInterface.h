@@ -26,7 +26,7 @@ public:
     
     virtual void add(Component *uComponent)=0;
     virtual void remove(Component *uComponent)=0;
-    virtual void getChildName()=0;
+    
     
 };
 
