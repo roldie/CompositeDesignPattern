@@ -26,8 +26,8 @@ public:
     //1. name of Component
     string name;
     
-    //2. vector to store all Components
-    vector<Component*> Components;
+    //2. vector to store all Children
+    vector<Component*> child;
     
     //3. constructor
     Component(string uName);

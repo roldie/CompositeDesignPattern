@@ -22,10 +22,10 @@ Component::~Component(){
 void Component::getChildName(){
     
     
-    for (int i=0; i<Components.size(); i++) {
+    for (int i=0; i<child.size(); i++) {
         
-        cout<<Components.at(i)->name<<endl;
-        Components.at(i)->getChildName();
+        cout<<child.at(i)->name<<endl;
+        child.at(i)->getChildName();
     }
     
     

@@ -10,7 +10,7 @@
 
 void WindowView::add(Component *uComponent){
     
-    Components.push_back(uComponent);
+    child.push_back(uComponent);
 
 }
 
