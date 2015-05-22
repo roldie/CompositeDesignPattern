@@ -16,29 +16,29 @@ using namespace std;
 int main(int argc, const char * argv[]) {
 
     //1. create Components
-    Component *mainScreen=new WindowView("MainScreen");
-    Component *subScreen1=new WindowView("SubScreen_1");
+    Component *mainView=new WindowView("MainView");
+    Component *subView1=new WindowView("SubView_1");
     
-    Component *subScreen2=new WindowView("SubScreen_2");
+    Component *subView2=new WindowView("SubView_2");
 
     //2. create leaves
     Component *playButton=new ButtonView("Play");
     Component *stopButton=new ButtonView("Stop");
     
     //3. add children to the root node
-    mainScreen->add(subScreen1);
+    mainView->add(subView1);
     
-    mainScreen->add(subScreen2);
+    mainView->add(subView2);
     
     //4. add children to nodes
-    subScreen1->add(playButton);
-    subScreen1->add(stopButton);
+    subView1->add(playButton);
+    subView1->add(stopButton);
     
     //5. print all children of root node
-    mainScreen->getChildName();
+    mainView->getChildName();
     
     //6. print all children of node
-    //subScreen1->getChildName();
+    //subView1->getChildName();
     
     return 0;
 }
